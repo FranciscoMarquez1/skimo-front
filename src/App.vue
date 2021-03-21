@@ -1,19 +1,35 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <b-container fluid id="app">
+    <b-row>
+       <NavBar />
+    </b-row>
+    <b-row class="main-content">
+      <b-col cols=8>
+        <Clientes-frecuentes />
+      </b-col>
+      <b-col>
+        <Nosotros />
+      </b-col>
+    </b-row>
+    <Footer />
+  </b-container>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import ClientesFrecuentes from "./components/ClientesFrecuentes.vue";
+import Footer from "./components/Footer.vue";
+import NavBar from "./components/NavBar.vue";
+import Nosotros from "./components/Nosotros.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    ClientesFrecuentes,
+    Footer,
+    NavBar,
+    Nosotros,
+  },
+};
 </script>
 
 <style>
@@ -23,6 +39,8 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+.main-content {
+  margin-top: 20px;
 }
 </style>
