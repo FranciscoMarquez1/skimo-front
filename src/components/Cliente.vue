@@ -30,6 +30,7 @@
 <style scoped>
 .cardCustom {
     padding: 15px;
+    -webkit-border-radius: 12px; 
     border-radius: 10%;
     box-shadow: 0 0 2px 0px;
     margin: 20px 0px;
@@ -54,6 +55,6 @@ img {
 .clientName {
     font-size: 1.5rem;
     font-weight: bold;
-
+    min-height: 72px;
 }
 </style>

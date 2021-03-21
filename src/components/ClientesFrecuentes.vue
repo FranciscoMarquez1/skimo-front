@@ -2,7 +2,7 @@
     <div id="clientes-frecuentes">
         <h2>Clientes Frecuentes</h2>
         <b-row>
-            <b-col cols="12" md="6"  v-for="cliente in apidata" :key="cliente.index"  align="center">
+            <b-col cols="12" md="6"  v-for="cliente in apidata" :key="cliente.index" >
                     <Cliente class="cliente" :cliente="cliente"/>
             </b-col>
         </b-row>
@@ -41,5 +41,11 @@ import Cliente from './Cliente'
     h2 {
         font-weight: 700;
         margin-bottom: 2rem;
+    }
+
+    @media (max-width: 768px) {
+        #clientes-frecuentes {
+            padding-left: 0px;
+        }
     }
 </style>

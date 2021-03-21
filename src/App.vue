@@ -4,7 +4,7 @@
        <NavBar />
     </b-row>
     <b-row class="main-content">
-      <b-col cols=8>
+      <b-col cols=12 md="8">
         <Clientes-frecuentes />
       </b-col>
       <b-col>

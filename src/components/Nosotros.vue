@@ -23,4 +23,9 @@
         font-weight: 700;
         margin-bottom: 2rem;
     }
+        @media (max-width: 768px) {
+        #nosotros {
+            padding-left: 0px;
+        }
+    }
 </style>
