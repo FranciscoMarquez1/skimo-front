@@ -19,4 +19,8 @@
         text-align: left;
         padding-left: 20px;
     }
+    h2 {
+        font-weight: 700;
+        margin-bottom: 2rem;
+    }
 </style>

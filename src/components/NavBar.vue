@@ -1,7 +1,7 @@
 <template>
-    <b-navbar toggleable="lg" type="dark" variant="info" fixed class="navbar">
+    <b-navbar toggleable="lg" variant="info" fixed class="navbar-custom">
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
-
+      <div class="arrow-up"></div>
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav>
           <b-nav-item href="#">Skimo</b-nav-item>
@@ -23,9 +23,23 @@ export default {
 </script>
 
 <style scoped>
-.navbar {
+.navbar-custom {
     width: 100%;
+    padding: 1.5rem;
     background-color: #005418 !important;
+}
+.navbar-custom a {
+    color: #ffffff !important;
+    font-size: 1.5rem;
+}
+
+.arrow-up {
+  width: 0; 
+  height: 0; 
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 50px solid #00944d;
+  margin-left: 20px;
 }
 
 </style>
